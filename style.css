@@ -1,0 +1,9 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mynewClass {
+    border: 3px solid;
+    background-color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
