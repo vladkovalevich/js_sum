@@ -12,7 +12,7 @@ list.classList.remove("myNewClass");
 const image = document.querySelector("img");
 image.setAttribute("alt", "value");
 image.src =
-  "C:\Users\vladKo\Downloads\Telegram Desktop";
+  "C:\Users\vladKo\Downloads\Telegram_Desktop\1.jpg";
 image.width = 250;
 // image.removeAttribute("width");
 
