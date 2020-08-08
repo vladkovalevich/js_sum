@@ -2,8 +2,8 @@
 //варианты получения доступа к документу
 //1 through name of tage
 const title = document.querySelector("h1");
-title.textContent = "Fire";
-title.style.color = "darkred";
+title.textContent = "JS";
+title.style.color = "blue";
 title.style.background = "black";
 
 const list = document.querySelector("ul");
@@ -31,7 +31,7 @@ console.dir(title);
 
 //создание элементов
 const newLi = document.createElement("li");
-newLi.textContent = "$$";
+newLi.textContent = "...";
 list.appendChild(newLi); //добавился глобально
 // list.prepend("some new elements in the begining");
 // list.append("some new elements in the end");
@@ -42,13 +42,13 @@ const newImage = image.cloneNode(true);
 list.insertAdjacentElement("afterend", newImage);
 
 const beforeList = document.createElement("a");
-beforeList.textContent = "&";
+beforeList.textContent = "1";
 const beginList = document.createElement("a");
-beginList.textContent = "@";
+beginList.textContent = "3";
 const endList = document.createElement("a");
-endList.textContent = "@";
+endList.textContent = "4";
 const afterList = document.createElement("a");
-afterList.textContent = "&";
+afterList.textContent = "2";
 
 list.style.border = "5px solid";
 list.insertAdjacentElement("afterbegin", beginList);
