@@ -12,7 +12,7 @@ list.classList.remove("myNewClass");
 const image = document.querySelector("img");
 image.setAttribute("alt", "value");
 image.src =
-  "https://images.pexels.com/photos/1558916/pexels-photo-1558916.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+  "../1.jpg";
 image.width = 250;
 image.removeAttribute("alt");
 
