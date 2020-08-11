@@ -1,6 +1,4 @@
 "use strict";
-//варианты получения доступа к документу
-//1 through name of tage
 const title = document.querySelector("h1");
 title.textContent = "JS";
 title.style.color = "blue";
@@ -16,23 +14,23 @@ image.src =
 image.width = 250;
 image.removeAttribute("alt");
 
-//2 through class
+//2
 // const title = document.querySelector(".Main_Title");
 // const title = document.getElementsByClassName("item");
 
-//3 through identifier
+//3 
 // const title = document.querySelector("#title");
 // const title = document.getElementById("title");
 
-//4 through data atribute
+//4
 // const title = document.querySelector('[data-action="action"]');
 console.log(title);
 console.dir(title);
 
-//создание элементов
+//создание элем
 const newLi = document.createElement("li");
 newLi.textContent = "...";
-list.appendChild(newLi); //добавился глобально
+list.appendChild(newLi); //добавился гл
 // list.prepend("some new elements in the begining");
 // list.append("some new elements in the end");
 // list.removeChild(newLi);
@@ -68,8 +66,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
   console.log("Обработка клика по кнопке");
   console.log(event.type);
-  console.log(event.target); //happened event
-  console.log(event.currentTarget); //happened handler events
+  console.log(event.target); 
+  console.log(event.currentTarget);
   list.style.border = "7px solid black";
 });
 
