@@ -63,6 +63,7 @@ afterList.remove();
 // list.innerHTML = ""; list.innerHTML = `<li>1<li>`;
 
 const button = document.querySelector("button");
+console.log(button);
 button.addEventListener("click", () => {
   console.log("Обработка клика по кнопке");
   console.log(event.type);
