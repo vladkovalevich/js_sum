@@ -62,3 +62,24 @@ for (let element of images) {
   const img = `<img src="${element.url}" class="img" >`;
   ul2.insertAdjacentHTML("beforebegin", img);
 }
+
+// task 6
+
+let input = document.getElementById("validation-input");
+console.dir(input);
+const dataLenght = +input.getAttribute("data-length");
+console.log(dataLenght);
+// input.classList.add("valid");
+input.addEventListener("blur", () => {
+  if (input.value.length !== dataLenght && input.value.length !== 0) {
+    input.classList.add("invalid");
+  }
+  if(input.value.length === 0){
+    input.classList.remove("valid");
+    input.classList.remove("invalid");
+  }
+  if (input.value.length === dataLenght) {
+    input.classList.add("valid");
+    input.classList.remove("invalid");
+  }
+});
