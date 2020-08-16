@@ -62,7 +62,11 @@ for (let element of images) {
   const img = `<img src="${element.url}" class="img" >`;
   ul2.insertAdjacentHTML("beforebegin", img);
 }
-
+// task 4
+const button = document.querySelector("button");
+console.log(button);
+const button2 = document.querySelector("button");
+console.log(button);
 // task 6
 
 let input = document.getElementById("validation-input");
